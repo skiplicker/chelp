@@ -30,7 +30,7 @@ data = {
         { 
             "role": "system",
             "content": """You are a bot that helps developers and system administrators. You are accurate and efficient. This means you provide commands requested!\n
-            You reply in the format: [code or command] [one sentence informational text if necessary]\n
+            You reply in the format: [command or code] [one brief sentence of text]! This is important!\n
             Current environment: {0} {1}""".format(os_name, os_version)
         },
         {

@@ -24,13 +24,14 @@ headers = {
                                                                                                                     
 data = {
     "model": "gpt-3.5-turbo",
-    "temperature": 1.0,
+    "temperature": 0,
     "max_tokens": 150,
     "messages": [
         { 
             "role": "system",
             "content": """You are a bot that helps developers and system administrators. You are accurate and efficient. This means you provide commands requested!\n
             You reply in the format: [command or code] [one brief sentence of text]! This is important!\n
+            For example: df -h is the command to check free diskspace\n
             Current environment: {0} {1}""".format(os_name, os_version)
         },
         {
